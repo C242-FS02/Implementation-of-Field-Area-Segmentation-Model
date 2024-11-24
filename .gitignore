@@ -1,0 +1,10 @@
+model_reference/
+anaconda3/
+data/
+code/*
+# Allow .ipynb files in the code directory
+!code/*.ipynb
+
+!code/*.yml
+!code/*.toml
+backup/

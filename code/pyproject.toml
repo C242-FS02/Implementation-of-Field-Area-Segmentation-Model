@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "9th-code - 鉄谷尚史"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = {version = "^2.4.1+cu121", source = "pytorch-gpu"}
+torchvision = {version = "^0.19.1+cu121", source = "pytorch-gpu"}
+torchaudio = {version = "^2.4.1+cu121", source = "pytorch-gpu"}
+numpy = "2.1.0"
+pandas = "^2.2.2"
+opencv-python = "^4.10.0.84"
+tifffile = "^2024.8.30"
+tqdm = "^4.66.5"
+matplotlib = "^3.9.2"
+wandb = "^0.17.9"
+segmentation-models-pytorch = "^0.3.4"
+cmaes = "^0.11.1"
+supervision = "^0.23.0"
+shapely = "2.0.6"
+ttach = "^0.0.3"
+pytorch-lightning = "^2.4.0"
+scikit-learn = "^1.5.1"
+pycocotools = "^2.0.8"
+panopticapi = {git = "https://github.com/cocodataset/panopticapi.git"}
+scikit-image = "^0.24.0"
+albumentations = "^1.4.14"
+imagecodecs = "^2024.6.1"
+iterative-stratification = "^0.1.7"
+optuna = "^4.0.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
